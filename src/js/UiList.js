@@ -5,6 +5,7 @@ export class UiList extends React.Component
     constructor(props){
         super(props);
         this.onClickHandler = this.onClickHandler.bind(this);
+        
     }
     onClickHandler(e)
     {

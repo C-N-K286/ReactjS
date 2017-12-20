@@ -19,8 +19,8 @@ class Vplayer extends React.Component{
     }
     componentWillMount()
     {
-        let value = ['sun raha','thunder','cheez badi mast','baitiki vachi','chiru nama','sanam re','jimmiki kemmel',
-                    'angular2','angular js','npm','backbone js','plain javascript','JSX','es6'];
+        let value = ['sun raha','thunder','cheez badi mast','baitiki vachi','bellgeddu','sanam re','jimmiki kemmel',
+                    ];
         this.setState({list:value});
     }
 
@@ -29,10 +29,10 @@ class Vplayer extends React.Component{
         return(
             <Container className='container' >
             <Row>
-                <Col sm="6">
+                <Col sm="3">
                 <List  list={this.state.list}  onClick={this.onVideoClick} />
                 </Col>
-                <Col sm="6">
+                <Col sm="9">
                 <Video  list={this.state.list} index={this.state.index}/>
                 </Col>
             </Row>
